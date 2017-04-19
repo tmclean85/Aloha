@@ -127,7 +127,11 @@ html {
   display: flex;
 }
 
+
 /*ul li {
+
+ul li {
+
   font-family: 'ralewaymedium';
   color: red;
   margin: 15px;
@@ -135,9 +139,15 @@ html {
   text-transform: uppercase;
   text-align: center;
   display: flex;
+
   flex-flow: row nowrap;
   min-height: 75px;
 }*/
+
+  min-height: 75px;
+
+}
+
 
 #cart-icon {
   position: absolute;
@@ -300,6 +310,7 @@ h3 {
   float: left;
   margin-right: 5px;
   flex-grow: 1;
+
 }
 
 #bags {
