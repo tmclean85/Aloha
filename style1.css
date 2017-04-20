@@ -51,8 +51,6 @@ table {
 
 
 html {
-  max-width: 1240px;
-  min-width: 600px;
   font-size: 16px;
 }
 
@@ -97,34 +95,37 @@ html {
 }
 
 #aloha-logo {
-  position: absolute;
+  display: flex;
+  width: 10rem;
   top: 18px;
   left: -40px;
-  margin-left: 0px;
+  margin-left: 2rem;
 }
 
 .header-list {
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   position: relative;
-  width: 100%;
-  min-height: 50px;
-  padding-top: 45px;
+  padding-top: 0px;
   padding-bottom: 0px;
+  margin-top: 1rem;
 }
 
 .menu-item {
   font-family: 'ralewaymedium';
   color: red;
   margin: 0px 15px 0px 15px;
-  padding-bottom: 2rem;
+  padding: 2rem;
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
-  display: flex;
+  display: inline-block;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
 }
 
 
@@ -144,28 +145,21 @@ ul li {
   min-height: 75px;
 }*/
 
-  min-height: 75px;
-
-}
-
 
 #cart-icon {
-  position: absolute;
   width: 55px;
   height: 55px;
-  display: inline-block;
-  left: 1150px;
+  display: flex;
   top: 23px;
+  flex-flow: row nowrap;
+
 }
 
-#overlayed-text {
+.overlayed-text {
   color: white;
-  position: absolute;
-  display: inline-block;
-  left: 550px;
-  top: 300px;
-  z-index: 100;
+  display: flex;
   size: 100%;
+  flex-direction: column;
 }
 
  .header-sans-font {
@@ -174,32 +168,36 @@ ul li {
   margin: 15px;
   text-transform: uppercase;
   text-shadow: 2px 2px #323232;
+  display: flex;
+  z-index: 100;
+  justify-content: center;
 }
 
 .header-serif-font {
   font-size: 60px;
-  position: relative;
-  right: 175px;
+  display: flex;
   text-shadow: 2px 2px #323232;
+  z-index: 100;
 }
 
-#hero-banner {
+.hero-banner {
   background: url("images/banner-girl.png"), url("images/flower-bkgd.jpg");
   background-repeat: no-repeat, repeat-x;
   background-size: contain;
   background-position: center 7rem, center;
   display: flex;
   position: relative;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   height: 475px;
-  width: 100%;
+  z-index: 50;
 }
 
-#hero-banner h4 {
+.hero-banner h4 {
   text-align: center;
 }
 
-#hero-banner:after {
+.hero-banner:after {
   content: ' ';
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   size: cover;
