@@ -99,16 +99,15 @@ html {
   width: 10rem;
   top: 18px;
   left: -40px;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .header-list {
   list-style-type: none;
   text-transform: uppercase;
-  text-align: center;
+  align-content: center;
   justify-content: space-between;
   display: flex;
-  position: relative;
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 1rem;
@@ -152,6 +151,7 @@ ul li {
   display: flex;
   top: 23px;
   flex-flow: row nowrap;
+  margin-right: 2rem;
 
 }
 
@@ -208,16 +208,12 @@ ul li {
   bottom: 0;
 }
 
-#styles-banner {
+.styles-banner {
   display: flex;
   flex-flow: column nowrap;
-  text-align: center;
-  max-height: 25rem;
-  padding-top: 100px;
-  margin: 0, 0;
-  max-width: 1240px;
-  min-width: 600px;
-  position: relative;
+  align-content: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .headerbold {
@@ -360,9 +356,12 @@ h3 {
 }
 
 p {
-  text-align: center;
   font-family: 'ralewaylight';
-  display: inline-block;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
   padding: 20px 20px;
+  position: relative;
 }
 
