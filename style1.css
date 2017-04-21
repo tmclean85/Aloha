@@ -152,7 +152,6 @@ ul li {
   top: 23px;
   flex-flow: row nowrap;
   margin-right: 2rem;
-
 }
 
 .overlayed-text {
@@ -214,6 +213,16 @@ ul li {
   align-content: center;
   justify-content: center;
   margin-top: 2rem;
+  height: 13rem;
+}
+
+.stylesbanner p {
+  font-family: 'ralewaylight';
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0.25rem 0.25rem;
+  margin-top: 1rem;
 }
 
 .headerbold {
@@ -230,13 +239,17 @@ h3 {
 
 .nav-menu-top {
   font-family: 'ralewaymedium';
-  height: 150px;
-  width: 100%;
+  height: 10rem;
   text-align: center;
   margin: 15px;
   display: flex;
   position: relative;
   flex-grow: 1;
+}
+
+.nav-menu-top p {
+  align-content: center;
+  justify-content: center;
 }
 
 #mens {
@@ -280,16 +293,21 @@ h3 {
   flex-grow: 1;
 }
 
+
 .nav-menu-bottom {
   font-family: 'ralewaymedium';
   height: 150px;
-  width: 100%;
-  text-align: center;
+  align-content: center;
+  justify-content: center;
   margin-top: 30px;
   margin-left: 15px;
   display: flex;
-  position: relative;
   top: 125px;
+}
+
+.nav-menu-bottom p {
+  align-content: center;
+  justify-content: center;
 }
 
 #sale {
@@ -358,10 +376,9 @@ h3 {
 p {
   font-family: 'ralewaylight';
   display: flex;
-  text-align: center;
   align-content: center;
   justify-content: center;
-  padding: 20px 20px;
-  position: relative;
+  padding: 0.25rem 0.25rem;
+  margin-top: 1rem;
 }
 
