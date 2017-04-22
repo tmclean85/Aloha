@@ -50,7 +50,7 @@ table {
 /* meyer reset above */
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @font-face {
@@ -215,13 +215,20 @@ ul li {
   height: 13rem;
 }
 
-.stylesbanner p {
+.styles-banner p {
   font-family: 'ralewaylight';
   display: flex;
   align-content: center;
   justify-content: center;
   padding: 0.25rem 0.25rem;
   margin-top: 1rem;
+}
+
+.styles-banner h3 {
+  font-family: 'playfair_displayitalic';
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100;        
 }
 
 .headerbold {
@@ -229,148 +236,145 @@ ul li {
   font-weight: bold;
 }
 
-h3 {
-  font-family: 'playfair_displayitalic';
-  font-size: 40px;
-  text-align: center;
-  font-weight: 100;
-}
-
-.nav-menu-top {
+.nav-menu {
   font-family: 'ralewaymedium';
-  height: 20rem;
+  height: 50rem;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   margin: 1rem 1rem;
 }
 
-.nav-menu-bottom {
-  font-family: 'ralewaymedium';
-  height: 20rem;
+.nav-menu ul {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-flow: row nowrap;
-  margin: 1rem 1rem;
+  flex-flow: row wrap;
+
 }
 
-.nav-menu-top .nav-item:nth-child(n) {
-  flex-grow: 2;
+.long-box {
+  width: 50%;
+  border: 2px solid white;
+  box-sizing: border-box;
+
+}
+
+.short-box {
+  width: 25%;
+  border: 2px solid white;
+  box-sizing: border-box;  
+}
+
+
+.nav-menu .nav-item:nth-child(n) {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/mens-category.jpg");
   color: white;
   background-size: cover;
-  height: 300px;
+  justify-content: center;
+  align-items: center;
   display: flex;
-   flex-flow: row nowrap;
-  text-align: center;
-  top: 175px;
-  margin-right: 5px;
-  order: 1;
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 
 
-.nav-menu-top .nav-item:nth-child(2n) {
+.nav-menu .nav-item:nth-child(2n) {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/trends-category.jpg");
-  color: white;
   background-size: cover;
-  height: 300px;
-  width: 275px;
-  display: flex;
-  flex-flow: row nowrap;
-  text-align: center;
-  top: 175px;
-  float: left;
-  margin-right: 5px;
-  flex-grow: 1;
-  order: 2;
 }
 
-.nav-menu-top .nav-item:nth-child(3n) {
+.nav-menu .nav-item:nth-child(3n) {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/glasses-category.jpg"); 
+  color: white;
+  background-size: cover;
+}
+
+.nav-menu .nav-item:nth-child(4n) {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/sale-category.jpg");
   color: white;
   background-size: cover;
-  height: 300px;
-  width: 275px;
-  display: flex;
-  text-align: center;
-  flex-flow: row nowrap;
-  top: 175px;
-  float: left;
-  margin-right: 5px;
-  flex-grow: 1;
-  order: 3;
 }
 
-.nav-menu-bottom .nav-item:nth-child(n) {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/sale-category.jpg");
-  color: white;
-  background-size: cover;
-  height: 300px;
-  width: 275px;
-  display: inline-block;
-  text-align: center;
-  top: 175px;
-  float: left;
-  margin-right: 5px;
-  flex-grow: 1;
-
-}
-
-.nav-menu-bottom .nav-item:nth-child(2n) {
+.nav-menu .nav-item:nth-child(5n) {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/bags-category.jpg");
   color: white;
   background-size: cover;
-  height: 300px;
-  width: 275px;
-  display: inline-block;
-  text-align: center;
-  top: 175px;
-  float: left;
-  margin-right: 5px;
-  flex-grow: 1;
 }
 
-.nav-menu-bottom .nav-item:nth-child(3n) {
+.nav-menu .nav-item:nth-child(6n) {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/womens-category.jpg");
   color: white;
   background-size: cover;
-  height: 300px;
-  width: 550px;
-  display: inline-block;
-  text-align: center;
-  top: 175px;
-  float: left;
-  flex-grow: 1;
 }
 
 .middle-banner {
   height: 200px;
   display: flex;
-  position: relative;
   align-content: center;
   justify-content: center;
 }
 
-.favourite-items-images {
+.middle-banner h3 {
+  font-family: 'playfair_displayitalic';
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.item-carousel p {
+    font-family: 'ralewaylight';
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0.25rem 0.25rem;
+  margin-top: 2rem;
+}
+
+.favourite-items-carousel {
    display: flex;
    position: relative;
-
 }
 
-.favourite-items-list {
-  display: flex;
+.carousel-header {
+  text-transform: uppercase;
+}
+
+.carousel-product {
+  display: block;
   text-align: center;
-
-  position: relative;
-  margin-bottom: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: red;
 }
 
-p {
+.updates-box {
+  color: white;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(images/wave-bkgd.jpg);
+  background-position: bottom;
+  height: 30rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.updates-box h3 {
+  display: flex;
+  font-family: 'playfair_displayitalic';
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.updates-box p {
   font-family: 'ralewaylight';
   display: flex;
   align-content: center;
   justify-content: center;
   padding: 0.25rem 0.25rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
-
