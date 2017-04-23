@@ -93,6 +93,10 @@ html {
     font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 #aloha-logo {
   display: flex;
   width: 10rem;
@@ -179,31 +183,20 @@ ul li {
 }
 
 .hero-banner {
-  background: url("images/banner-girl.png"), url("images/flower-bkgd.jpg");
-  background-repeat: no-repeat, repeat-x;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/banner-girl.png"), url("images/flower-bkgd.jpg");
+  background-repeat: no-repeat, no-repeat, repeat-x;
   background-size: contain;
-  background-position: center 7rem, center;
+  background-position: center, center 7.5rem, center;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  height: 475px;
+  height: 525px;
   z-index: 50;
 }
 
 .hero-banner h4 {
   text-align: center;
-}
-
-.hero-banner:after {
-  content: ' ';
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .styles-banner {
@@ -377,4 +370,70 @@ ul li {
   justify-content: center;
   padding: 0.25rem 0.25rem;
   margin-top: 2rem;
+}
+
+.footer-banner {
+  color: white;
+  height: 22.5rem;
+  display: flex;
+  border-top: 0.5rem solid #FFFFFF;
+}
+
+.footer-info {
+  background: #242424;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.footer-info p {
+  font-size: 1.2rem;
+  padding-left: 6rem;
+}
+
+.footer-info.top {
+  padding-top: 5rem;
+}
+
+.footer-info.middle {
+  padding-top: 2.5rem;
+}
+
+.footer-info.middle a {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.footer-info.bottom {
+  padding-top: 2.5rem;
+  color: #969696;
+}
+
+.social-media-link-footer {
+  background: #242424;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 7rem;
+}
+
+.social-media-link-footer li {
+  font-size: 1.15rem;
+  font-family: 'ralewaylight';
+  display: flex;
+}
+
+.social-media-link-footer ul li a {
+  margin: 0 0.15rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.social-media-link-footer ul li i {
+  padding-right: 1rem;
 }
