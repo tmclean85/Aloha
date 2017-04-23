@@ -126,6 +126,19 @@ html {
   margin-top: 1rem;
 }
 
+.header-list ul a {
+  text-decoration: none;
+  color: #e2574c;
+}
+
+.header-list ul a:hover {
+  color: #b64036;
+}
+
+.header-list ul a:focus {
+  outline: thin dotted;
+}
+
 .menu-item {
   font-family: 'ralewaymedium';
   color:  #e2574c;
@@ -183,7 +196,7 @@ html {
   height: 400px;
 }
 
-.styles-banner {
+.about-banner {
   display: flex;
   flex-flow: column nowrap;
   align-content: center;
@@ -192,7 +205,7 @@ html {
   height: 13rem;
 }
 
-.styles-banner p {
+.about-banner p {
   font-family: 'ralewaylight';
   display: flex;
   align-content: center;
@@ -201,7 +214,7 @@ html {
   margin-top: 1rem;
 }
 
-.styles-banner h3 {
+.about-banner h3 {
   font-family: 'playfair_displayitalic';
   font-size: 40px;
   text-align: center;
@@ -443,7 +456,8 @@ html {
 }
 
 .footer-info p {
-  font-size: 1.2rem;
+  font-family: 'playfair_displaybold';
+  font-size: 1rem;
   padding-left: 6rem;
 }
 
@@ -453,11 +467,13 @@ html {
 
 .footer-info.middle {
   padding-top: 2.5rem;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .footer-info.middle a {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .footer-info.bottom {
