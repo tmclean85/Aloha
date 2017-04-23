@@ -50,7 +50,17 @@ table {
 /* meyer reset above */
 
 html {
-  font-size: 14px;
+  font-size: 16px;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+         url('fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -118,9 +128,9 @@ html {
 
 .menu-item {
   font-family: 'ralewaymedium';
-  color: red;
+  color:  #e2574c;
   margin: 0px 15px 0px 15px;
-  padding: 2rem;
+  padding: 1rem;
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
@@ -129,24 +139,6 @@ html {
   align-content: center;
   justify-content: center;
 }
-
-
-/*ul li {
-
-ul li {
-
-  font-family: 'ralewaymedium';
-  color: red;
-  margin: 15px;
-  list-style-type: none;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-
-  flex-flow: row nowrap;
-  min-height: 75px;
-}*/
-
 
 #cart-icon {
   width: 55px;
@@ -157,46 +149,38 @@ ul li {
   margin-right: 2rem;
 }
 
-.overlayed-text {
-  color: white;
+.hero-banner p,h1 {
+  color: #fff;
+  text-shadow:  2px 2px 3px rgba(100, 100, 100, 0.8);
   display: flex;
-  size: 100%;
-  flex-direction: column;
-}
-
- .header-sans-font {
-  font-family: 'ralewaymedium';
-  font-size: 18px;
-  margin: 15px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px #323232;
-  display: flex;
-  z-index: 100;
+  align-content: center;
   justify-content: center;
 }
 
-.header-serif-font {
-  font-size: 60px;
-  display: flex;
-  text-shadow: 2px 2px #323232;
-  z-index: 100;
+.hero-banner p {
+  font-family: 'ralewaymedium';
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  padding-top: 4.5rem;
+}
+
+.hero-banner h1 {
+  font-family: 'playfair_displayregular';
+  font-size: 4rem;
+  padding-top: 0.75rem;
+  
 }
 
 .hero-banner {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/banner-girl.png"), url("images/flower-bkgd.jpg");
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-size: contain;
-  background-position: center, center 7.5rem, center;
+  background-position: center, center 5rem, center;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  height: 525px;
-  z-index: 50;
-}
-
-.hero-banner h4 {
-  text-align: center;
+  height: 400px;
 }
 
 .styles-banner {
@@ -231,12 +215,22 @@ ul li {
 
 .nav-menu {
   font-family: 'ralewaymedium';
+  text-shadow:  2px 2px 3px rgba(100, 100, 100, 0.8);
   height: 50rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
   flex-flow: row wrap;
   margin: 1rem 1rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu a:hover {
+  color: #f5ebc6;
 }
 
 .nav-menu ul {
@@ -317,8 +311,14 @@ ul li {
   font-weight: 100;
 }
 
+.item-carousel {
+  width: 80%
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .item-carousel p {
-    font-family: 'ralewaylight';
+  font-family: 'ralewaylight';
   display: flex;
   align-content: center;
   justify-content: center;
@@ -326,9 +326,14 @@ ul li {
   margin-top: 2rem;
 }
 
-.favourite-items-carousel {
+.items-carousel-list {
    display: flex;
    position: relative;
+}
+
+.carousel-item {
+  width: 25%;
+  margin-right: 10px;
 }
 
 .carousel-header {
@@ -341,14 +346,30 @@ ul li {
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 2rem;
-  color: red;
+  color:  #e2574c;
+}
+
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: #cdcdcd;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: #333;
+}
+
+.flickity-enabled:focus .flickity-viewport {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .updates-box {
   color: white;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url(images/wave-bkgd.jpg);
   background-position: bottom;
-  height: 30rem;
+  height: 25rem;
   margin-top: 3rem;
   display: flex;
   flex-flow: column nowrap;
@@ -361,6 +382,7 @@ ul li {
   font-family: 'playfair_displayitalic';
   font-size: 40px;
   font-weight: 100;
+  padding-bottom: 2rem;
 }
 
 .updates-box p {
@@ -369,8 +391,36 @@ ul li {
   align-content: center;
   justify-content: center;
   padding: 0.25rem 0.25rem;
-  margin-top: 2rem;
+  font-size: 1.25rem;
 }
+
+.subscribe-field {
+      outline: none;
+    border: none;
+    border-radius: 100px;
+    width: 100%;
+    height: 3rem;
+}
+
+.subscribe-field input,button {
+  font-family:'ralewaymedium';
+}
+
+.subscribe-field button {
+  width: 7.7rem;
+  height: 2.5rem;
+  border: none;
+  background-color: #e2574c;
+  border-radius: 100rem;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.subscribe-field button:hover {
+  cursor: pointer;
+} 
 
 .footer-banner {
   color: white;
