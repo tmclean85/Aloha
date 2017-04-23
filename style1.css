@@ -312,9 +312,10 @@ html {
 }
 
 .item-carousel {
-  width: 80%
+  width: 100;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .item-carousel p {
@@ -360,9 +361,14 @@ html {
   background: #333;
 }
 
+.flickity-viewport {
+  freeScroll: true;
+  width: 90%;
+  display: flex;
+}
+
 .flickity-enabled:focus .flickity-viewport {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .updates-box {
