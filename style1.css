@@ -109,10 +109,10 @@ html {
 
 #aloha-logo {
   display: flex;
-  width: 10rem;
+  width: 8rem;
   top: 18px;
   left: -40px;
-  margin-left: 1rem;
+  margin-left: 2Frem;
 }
 
 .header-list {
@@ -139,11 +139,16 @@ html {
   outline: thin dotted;
 }
 
+.header-list ul li:nth-child(n3) {
+padding: 0.75rem 0 0 0;
+}
+
 .menu-item {
   font-family: 'ralewaymedium';
+  font-size: 0.75rem;
   color:  #e2574c;
   margin: 0px 15px 0px 15px;
-  padding: 1rem;
+  padding: 0.75rem 0.75rem 0 0;
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
@@ -375,7 +380,6 @@ html {
 }
 
 .flickity-viewport {
-  freeScroll: true;
   width: 90%;
   display: flex;
 }
@@ -413,12 +417,40 @@ html {
   font-size: 1.25rem;
 }
 
+form {
+  display: inline-block;
+  width: 30rem;
+  height: 3.5rem;
+  padding-top: 3em;
+
+}
+
 .subscribe-field {
-      outline: none;
+    background: #FFF;
+    outline: none;
     border: none;
     border-radius: 100px;
-    width: 100%;
     height: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+   
+}
+
+.subscribe-field input {
+  height: 2rem;
+  width: 20rem;
+  font-size: 1.25rem;
+  font-weight: 100;
+  box-shadow: none;
+  border: none;
+}
+
+.subscribe-field input:focus {
+  border: none;
+  outline: none;
 }
 
 .subscribe-field input,button {
@@ -435,6 +467,7 @@ html {
   font-weight: bold;
   text-align: center;
   font-size: 1.15rem;
+  margin-right: 0.25rem;
 }
 
 .subscribe-field button:hover {
@@ -468,7 +501,7 @@ html {
 .footer-info.middle {
   padding-top: 2.5rem;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column wrap;
 }
 
 .footer-info.middle a {
@@ -509,3 +542,11 @@ html {
 .social-media-link-footer ul li i {
   padding-right: 1rem;
 }
+
+
+
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
