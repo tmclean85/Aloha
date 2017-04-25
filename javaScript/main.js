@@ -1,9 +1,12 @@
-
 //FLICKITY
 $('.item-carousel').flickity({
+
   cellAlign: 'left',
-  contain: true
+  contain: true,
+  wrapAround: true,
+  autoPlay: true
 });
+
 //SMOOTHSCROLL
 $(document).ready(function(){
   $("a").on('click', function(event) {
@@ -18,14 +21,17 @@ $(document).ready(function(){
     } 
   });
 });
+
 //FORMSUBMIT
-$("form").submit(function(){
-  if (email=='')
-    alert("Please submit a valid e-mail address");
-    else if (email!=='') 
-    {
-      
-      alert("Thanks for subscribing!");
-    }
-}
-);
+$('button').on('click', function(){
+  var input=$('input').val(); 
+  if(input == ""){
+    alert('Please enter a valid email address.')
+  } else {
+    alert('Thank you for subscribing!')
+  }
+})
+
+
+
+

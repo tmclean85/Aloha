@@ -9,27 +9,26 @@
         <title> Aloha Homepage</title>
         </head>
         <body>
-
-         <nav class="header-list"> 
-            <img id="aloha-logo" src="images/aloha-logo.svg" alt="Aloha Apparel Logo" width="300" height="60">
-            <ul>
-              <li class="menu-item"><a class="nav-link" href="#about-banner">About</a></li>
-              <li class="menu-item"><a class="nav-link" href="#nav-menu">Shop</a></li>
-              <li class="menu-item"><a class="nav-link" href="#middle-banner">Featured</a></li>
-              <li class="menu-item"><a class="nav-link" href="#updates-box">Updates</a></li>
-            </ul>
-            <img id="cart-icon" src="images/cart-icon.svg" alt="Shop Icon">
-         </nav>  
+           <nav class="header-list"> 
+             <span class="aloha-logo-box"> <img id="aloha-logo" src="images/aloha-logo.svg" alt="Aloha Apparel Logo" width="300" height="60"></span>
+              <ul>
+                <li class="menu-item"><a class="nav-link" href="#about-banner">About</a></li>
+                <li class="menu-item"><a class="nav-link" href="#nav-menu">Shop</a></li>
+                <li class="menu-item"><a class="nav-link" href="#middle-banner">Featured</a></li>
+                <li class="menu-item"><a class="nav-link" href="#updates-box">Updates</a></li>
+             </ul>
+            <span class="cart-icon-box"><a href="#"><img id="cart-icon" src="images/cart-icon.svg" alt="Shop Icon"></a></span>
+           </nav>    
          <section class="hero-banner"> 
-         <div class="overlayed-text">
+           <div class="hero-text">
             <p>New Collection</p>
-            <h1>Spring/Summer 2016</h1>
-         </div>             
+            <h1>Spring/Summer 2016</h1>  
+           </div>          
          </section>
         <section class="about-banner" id="about-banner">
-            <h3><i>Hand-Crafted</i><b class="headerbold"> Styles</b></h3>
-            <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our</p>  
-                <p> current selection of products or sign-up for updates below.</p>
+            <h3>Hand-Crafted<span class="headerbold"> Styles</span></h3>
+            <span class="p-box"><p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our 
+            current selection of products or sign-up for updates below.</p></span>
         </section>
         <section class="nav-menu" id="nav-menu">
           <ul>
@@ -42,64 +41,65 @@
           </ul>
         </section>
         <section class="middle-banner" id="middle-banner">
-          <h3>Most-Loved <b class="headerbold"> Products</b></h3>
+          <h3>Most-Loved <span class="headerbold"> Products</span></h3>
         </section>
-        <section class="item-carousel" id="item-carousel" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
-        <ul class="items-carousel-list">
-         <li class="carousel-item">
+        <div class="item-carousel" id="item-carousel">
+       
+         <div class="carousel-item">
            <img class="carousel-image" src="images/checked-stretch-dress.jpg" alt="Checkered Dress image">
            <p class="carousel-header">dresses</p>
            <h3 class="carousel-product">Checked Stretch Dress</h3>
            <p class="carousel-price">$129.00</p>
-         </li>
-         <li class="carousel-item"> 
+         </div>
+         <div class="carousel-item"> 
            <img class="carousel-image" src="images/blue-hipster-backpack.jpg" alt="Blue Backpack image">
            <p class="carousel-header">bags</p>
            <h3 class="carousel-product">Blue Hipster Backpack</h3>
            <p class="carousel-price">$69.00</p>
-         </li>
-         <li class="carousel-item"> 
+         </div>
+         <div class="carousel-item"> 
            <img class="carousel-image" src="images/demin-overall-shorts.jpg" alt="Denim Shorts image">
            <p class="carousel-header">denim</p>
            <h3 class="carousel-product">Denim Overall Shorts</h3>
            <p class="carousel-price">$89.00</p>
-         </li>
-         <li class="carousel-item">
+         </div>
+         <div class="carousel-item">
            <img class="carousel-image" src="images/pink-dotted-dress.jpg" alt="Dotted Dress image">
            <p class="carousel-header">dresses</p>
            <h3 class="carousel-product">Pink Dotted Dress</h3>
            <p class="carousel-price">$99.00</p>
-         </li>
-         <li class="carousel-item">
+         </div>
+         <div class="carousel-item">
            <img class="carousel-image" src="images/stretch-knit-dress.jpg" alt="Knit Dress image">
            <p class="carousel-header">dresses</p>
            <h3 class="carousel-product">Stretch Knight Dress</h3>
            <p class="carousel-price">$169.00</p>
-         </li> 
-         <li class="carousel-item">
+         </div> 
+         <div class="carousel-item">
            <img class="carousel-image" src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt image">
            <p class="carousel-header">shirts</p>
            <h3 class="carousel-product">Cotton Blue Shirt</h3>
            <p class="carousel-price">$89.00</p>
-         </li>  
-           <li class="carousel-item">
+         </div>  
+           <div class="carousel-item">
            <img class="carousel-image" src="images/blue-silk-dress.jpg" alt="Blue Silk Dress image">
            <p class="carousel-header">dresses</p>
            <h3 class="carousel-product">Blue Silk Dress</h3>
            <p class="carousel-price">$119.00</p>
-         </li>  
-           <li class="carousel-item">
+         </div>  
+           <div class="carousel-item">
            <img class="carousel-image" src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Tshirt image">
            <p class="carousel-header">shirts</p>
            <h3 class="carousel-product">Cotton Yellow Tshirt</h3>
            <p class="carousel-price">$39.00</p>
-         </li>  
-        </ul>
-        </section>
+         </div>  
+        </div>
         <section class="updates-box" id="updates-box">
-          <h3>Sign-up for <b class="headerbold">Updates</b></h3>
-          <p>Stay updated on our latest product releases, be first to find out about</p><p> upcoming sales, and get free style tips
-           from our blog. Unsubscribe at any time.</p>
+          <h3>Sign-up for <span class="headerbold">Updates</span></h3>
+            <div class="sign-up-text">         
+              <span class="p-box"><p>Stay updated on our latest product releases, be first to find out about
+                upcoming sales, and get free style tipsfrom our blog. Unsubscribe at any time.</p></span>
+            </div>  
           <form name="subscription-form">
             <div class="subscribe-field">
               <input class="input-box" id="email" name="email-input" type heading="email" value placeholder="Your Email"/>
@@ -114,7 +114,7 @@
               <p>Powered by HTML and CSS</p>
             </div>
             <div class="footer-info middle">
-              <p>604-604-6040. <a href="mailto:info@alohaapparel.com" target="_blank">info@alohaapparel.com</a></p>
+             <span><p>604-604-6040. <a href="mailto:info@alohaapparel.com" target="_blank">info@alohaapparel.com</a></p></span>
             </div>
             <div class="footer-info bottom">
               <p>1490 W Broadway</p>
