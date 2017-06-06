@@ -145,68 +145,65 @@ padding: 0.75rem 0 0 0;
 }
 
 .menu-item {
-  font-family: 'Raleway Web';
+  color:  #e2574c;  
+  display: inline-block;  
+  font-family: 'Raleway Web', Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  color:  #e2574c;
+  list-style-type: none;
   margin: 0px 15px 0px 15px;
   padding: 1.5rem 0 0 0;
-  list-style-type: none;
   text-transform: uppercase;
   text-align: center;
-  display: inline-block;
 }
 
 #cart-icon {
-  width: 4rem;
-  margin-right: 4rem;
   margin-bottom: 1rem;
+  margin-right: 4rem;  
+  width: 4rem;
 }
 
 .hero-text p,h1 {
+  align-content: center;  
   color: #fff;
+  display: flex;  
+  justify-content: center;  
   text-shadow:  2px 2px 3px rgba(100, 100, 100, 0.8);
-  display: flex;
-  align-content: center;
-  justify-content: center;
 }
 
 .p-box {
+  align-items: center;  
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 7rem;
+  justify-content: center;  
 }
 
 .p-box p {
-  display: flex;
   max-width: 60%;
-  padding: 1rem;
   padding: 1.5rem 0.5rem;
 }
 
 .hero-text p {
-  font-family: 'Raleway Web';
+  font-family: 'Raleway Web', Helvetica, sans-serif;
+  font-size: 1.15rem;  
   font-weight: bold;
-  font-size: 1.15rem;
   text-transform: uppercase;
 }
 
 .hero-text h1 {
-  font-family: 'Playfair Display Web';
+  font-family: 'Playfair Display Web', Times, serif;
   font-size: 3.75rem;
-  padding-top: 1rem;
-  
+  padding-top: 1rem;  
 }
 
 .hero-text {
-    width: 80%;
-    margin: 0 auto;
+    color: #FFF; 
+    line-height: 1; 
+    margin: 0 auto;  
+    padding-top: 3rem;          
     text-shadow: 2px 2px 3px rgba(100, 100, 100, 0.8);
-    color: #FFF;
     text-align: center;
-    line-height: 1;
-    padding-top: 3rem;
+    width: 80%;    
 }
 
 .hero-banner {
@@ -215,59 +212,59 @@ padding: 0.75rem 0 0 0;
   background-size: contain, 20%, contain;
   background-position: center, center 5rem, center;
   display: flex;
-  width: 100%;
+  flex-flow: column nowrap;  
   justify-content: center;
-  flex-flow: column nowrap;
-  position: relative;
   height: 525px;
+  position: relative;  
+  width: 100%;  
 }
 
 .about-banner {
   display: flex;
   flex-flow: column wrap;
+  height: 13rem;  
   justify-content: center;
+  margin-top: 2rem;  
   text-align: center;
-  margin-top: 2rem;
-  height: 13rem;
 }
 
 .about-banner p {
-  font-family: 'Raleway Web';
-  display: flex;
+  display: flex;  
+  font-family: 'Raleway Web', Helvetica, sans-serif;
+  height: 25%;  
   justify-content: center;
+  margin-top: 1rem;  
   padding: 0.25rem 0.25rem;
-  margin-top: 1rem;
-  height: 25%;
 }
 
 .about-banner h3 {
-  font-family: 'Playfair Display Web';
+  font-family: 'Playfair Display Web', Times, serif;
   font-style: italic;
   font-size: 2.5rem;
-  text-align: center;
-  font-weight: 100;        
+  font-weight: 100;      
+  text-align: center;    
 }
 
 .headerbold {
-  font-family: 'Playfair Display Web';
+  font-family: 'Playfair Display Web', Times, serif;
   font-weight: bold;
   font-style: normal;
 }
 
 .nav-menu {
-  font-family: 'Raleway Web';
+  display: flex;  
+  font-family: 'Raleway Web', Helvetica, sans-serif;
   font-weight: bold;
+  flex-flow: row wrap;  
+  height: 35rem;  
+  justify-content: space-between;  
   text-shadow:  2px 2px 3px rgba(100, 100, 100, 0.8);
-  height: 35rem;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  flex-flow: row wrap;
 }
 
 .nav-menu a {
+  color: white;  
   text-decoration: none;
-  color: white;
 }
 
 .nav-menu a:hover {
@@ -275,33 +272,32 @@ padding: 0.75rem 0 0 0;
 }
 
 .nav-menu ul {
-  width: 100%;
-  display: flex;
+  display: flex;  
   flex-flow: row wrap;
-
+  width: 100%;
 }
 
 .long-box {
+  border: 3px solid white;  
   width: 50%;
-  border: 3px solid white;
 
 }
 
 .short-box {
+  border: 3px solid white;   
   width: 25%;
-  border: 3px solid white; 
 }
 
 .nav-menu .nav-item:nth-child(n) {
+  align-items: center;  
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/mens-category.jpg");
-  color: white;
   background-size: cover;
-  background-position: right;
+  background-position: right;  
+  color: white;
+  display: flex;  
+  font-size: 2rem;  
   justify-content: center;
-  align-items: center;
-  display: flex;
   text-transform: uppercase;
-  font-size: 2rem;
 }
 
 
@@ -336,17 +332,17 @@ padding: 0.75rem 0 0 0;
 }
 
 .middle-banner {
+  display: flex;  
   height: 200px;
-  display: flex;
   justify-content: center;
 }
 
 .middle-banner h3 {
-  font-family: 'Playfair Display Web';
+  align-items: center;  
+  display: flex;  
+  font-family: 'Playfair Display Web', Times, serif;
   font-style: italic;  
   font-size: 2.5rem;
-  display: flex;
-  align-items: center;
   font-weight: 100;
 }
 
@@ -357,27 +353,27 @@ padding: 0.75rem 0 0 0;
 /* CAROUSEL BELOW */
 
 .item-carousel {
+  align-content: center;
+  align-items: center;  
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-content: center;
-  align-items: center;
 }
 
 .carousel-item {
+  align-content: center;
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-content: center;
-  align-items: center;
   min-width: 25%;
   max-width: 25%;
 }
 
 .item-carousel p {
-  font-family: 'Raleway Web';
-  display: flex;
-  align-content: center;
+  align-content: center;  
+  display: flex;  
+  font-family: 'Raleway Web', Helvetica, sans-serif;
   justify-content: center;
   margin-top: 2rem;
 }
@@ -387,23 +383,23 @@ padding: 0.75rem 0 0 0;
 }
 
 .carousel-header {
-  text-transform: uppercase;
   font-size: 0.8rem;
+  text-transform: uppercase;  
 }
 
 .carousel-product {
+  color:  #e2574c;  
   display: flex;
+  font-size: 1.5rem;  
   justify-content: center;
   padding-top: 1rem;
-  font-size: 1.5rem;
-  color:  #e2574c;
 }
 
 .flickity-page-dots .dot {
-  width: 9px;
+  background: #cdcdcd;  
   height: 9px;
-  opacity: 1;
-  background: #cdcdcd;
+  opacity: 1;  
+  width: 9px;
 }
 
 .flickity-page-dots .dot.is-selected {
@@ -411,8 +407,8 @@ padding: 0.75rem 0 0 0;
 }
 
 .flickity-viewport {
+  display: flex;  
   width: 98%;
-  display: flex;
 }
 
 .flickity-enabled:focus .flickity-viewport {
@@ -425,20 +421,20 @@ padding: 0.75rem 0 0 0;
 /* CAROUSEL ABOVE */
 
 .updates-box {
-  color: white;
+  align-items: center;  
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), url("../images/wave-bkgd.jpg");
-  background-position: bottom;
+  background-position: bottom;  
+  color: white;
+  display: flex;  
+  flex-flow: column nowrap;  
   height: 25rem;
+  justify-content: center; 
   margin-top: 3rem;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .updates-box h3 {
   display: flex;
-  font-family: 'Playfair Display Web';
+  font-family: 'Playfair Display Web', Times, serif;
   font-style: italic;
   font-size: 40px;
   font-weight: 100;
@@ -450,33 +446,32 @@ padding: 0.75rem 0 0 0;
 }
 
 .updates-box p {
-  font-family: 'Raleway Web';
-  display: flex;
+  align-content: center;  
+  display: flex;  
+  font-family: 'Raleway Web', Helvetica, sans-serif;
   flex-flow: row wrap;
-  align-content: center;
+  font-size: 1.25rem;  
   justify-content: center;
   padding: 0.25rem 0.25rem;
-  font-size: 1.25rem;
 }
 
 form {
   display: inline-block;
-  width: 30rem;
   height: 3.5rem;
   padding-top: 3em;
-
+  width: 30rem;
 }
 
 .subscribe-field {
+  align-items: center;  
   background: #FFF;
-  outline: none;
   border: none;
-  border-radius: 100px;
-  height: 3rem;
-  display: flex;
+  border-radius: 100px;  
+  display: flex;  
   flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  height: 3rem;  
+  justify-content: space-between;  
+  outline: none;
   padding-left: 2rem;
    
 }
@@ -496,21 +491,21 @@ form {
 }
 
 .subscribe-field input,button {
-  font-family:'Raleway Web';
+  font-family:'Raleway Web', Helvetica, sans-serif;
   font-weight: bold;
 }
 
 .subscribe-field button {
-  width: 7.7rem;
-  height: 2.5rem;
+  background-color: #e2574c; 
   border: none;
-  background-color: #e2574c;
   border-radius: 100rem;
-  color: #FFF;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.15rem;
+  color: #FFF; 
+  font-size: 1.15rem;  
+  font-weight: bold;  
+  height: 2.5rem;  
   margin-right: 0.25rem;
+  text-align: center;  
+  width: 7.7rem;
 }
 
 .subscribe-field button:hover {
@@ -519,29 +514,29 @@ form {
 
 .footer-banner {
   background: #242424;
+  border-top: 0.5rem solid #FFFFFF;  
   color: white;
-  height: 22.5rem;
   display: flex;
-  border-top: 0.5rem solid #FFFFFF;
+  height: 22.5rem;  
   justify-content: space-between;
 }
 
 .footer-info { 
+  align-content: center;  
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-content: center;
 }
 
 .footer-info p {
-  font-family: 'Playfair Display Web';
+  font-family: 'Playfair Display Web', Times, serif;
   padding-left: 3rem;
 }
 
 .footer-info.middle {
+  display: flex;  
+  flex-flow: row nowrap;  
   padding-top: 2.5rem;
-  display: flex;
-  flex-flow: row nowrap;
 }
 
 .footer-info.middle a {
@@ -550,37 +545,33 @@ form {
 }
 
 .footer-info.bottom {
-  padding-top: 2.5rem;
   color: #969696;
   display: flex;
+  padding-top: 2.5rem;  
 }
 
 .social-media-link-footer {
-  width: 40%;
-  display: flex;
+  align-items: center;  
+  display: flex;  
   justify-content: flex-end;
-  align-items: center;
   padding-right: 3rem;
+  width: 40%;  
 }
 
 .social-media-link-footer li {
+  display: flex;  
   font-size: 1.15rem;
-  font-family: 'Raleway Web';
-  display: flex;
+  font-family: 'Raleway Web', Helvetica, sans-serif;
 }
 
 .social-media-link-footer ul li a {
+  color: #FFFFFF;  
+  display: flex;  
+  flex-flow: row nowrap;  
+  justify-content: center;  
   margin: 0 0.15rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  color: #FFFFFF;
+  padding: 0.5rem;  
   text-decoration: none;
-  padding: 0.5rem;
-}
-
-.social-media-link-footer ul li i {
-  
 }
 
 /* 600px+  */
@@ -590,8 +581,8 @@ form {
   }  
 
   #aloha-logo {
-    width: 8rem;
     margin-left: 1.5rem;
+    width: 8rem;   
   }
 
   #cart-icon {
