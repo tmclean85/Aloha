@@ -1,8 +1,8 @@
-## Aloha Apparel Co.
+# Aloha Apparel Co.
 
 Demo front page for an apparel brand.
 
-# KLI's Demonstrated:
+# Key Learning Implementations:
 
   - HTML Markup
 
