@@ -418,6 +418,7 @@ padding: 0.75rem 0 0 0;
 .flickity-prev-next-button {
   display: none;
 }
+
 /* CAROUSEL ABOVE */
 
 .updates-box {
@@ -693,7 +694,6 @@ form {
      display: flex;
      justify-content: center;
      align-items: center;
-
    }
 
 
@@ -721,8 +721,7 @@ form {
    }
     .social-media-link-footer ul li i {
       padding-top: 5rem;
-    }
-
+   }
 }
 
 
